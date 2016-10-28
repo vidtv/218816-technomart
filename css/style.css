@@ -1,8 +1,8 @@
 body {
-  font-size: 12pt;
-  line-height: 12pt;
+  font-size: 16px;
+  line-height: 16px;
   color: black;
-  font-family: "TimesNewRoman";
+  font-family: "PTSansRegular", "Arial", sans-serif;
 }
 
 @font-face {
@@ -16,8 +16,8 @@ body {
 }
 
 .slider-items h2 {
-  font-size: 36pt;
-  line-height: 30pt;
+  font-size: 36px;
+  line-height: 30px;
   color: white;
   font-weight: bold;
   font-family: "CuprumBold";
@@ -25,61 +25,61 @@ body {
 }
 
 .services h2 {
-  font-size: 36pt;
-  line-height: 24pt;
+  font-size: 36px;
+  line-height: 24px;
   color: #32425c;
   font-family: "CuprumRegular";
 }
 
 .catalog-category-name h2 {
-  font-size: 30pt;
-  line-height: 30pt;
+  font-size: 30px;
+  line-height: 30px;
   font-family: "CuprumRegular";
   color: #32425c;
   text-transform: uppercase;
 }
 
 .catalog-category-about h2 {
-  font-size: 30pt;
-  line-height: 24pt;
+  font-size: 30px;
+  line-height: 24px;
   font-family: "CuprumRegular";
   color: black;
   text-transform: uppercase;
 }
 
 .basket-message h2 {
-  font-size: 30pt;
-  line-height: 18pt;
+  font-size: 30px;
+  line-height: 18px;
   font-family: "CuprumRegular";
   color: black;
 }
 
 .shop-feature h3 {
-  font-size: 24pt;
-  line-height: 30pt;
+  font-size: 24px;
+  line-height: 30px;
   font-family: "CuprumBold";
   font-weight: bold;
   color: white;
 }
 
 .popular h3 {
-  font-size: 30pt;
-  line-height: 30pt;
+  font-size: 30px;
+  line-height: 30px;
   font-family: "CuprumRegular";
   color: #32425c;
   text-transform: uppercase;
 }
 
 .services h3 {
-  font-size: 30pt;
-  line-height: 24pt;
+  font-size: 30px;
+  line-height: 24px;
   font-family: "CuprumRegular";
   color: black;
   text-transform: uppercase;
 }
 
 .company-info h3 {
-  font-size: 30pt;
+  font-size: 30px;
   font-family: "CuprumRegular";
   color: black;
   text-transform: uppercase;
@@ -90,5 +90,5 @@ body {
 }
 
 .company-contacts h3 {
-  line-height: 24pt;
+  line-height: 24px;
 }
