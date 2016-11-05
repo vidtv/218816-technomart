@@ -49,7 +49,7 @@ body {
 .logo {
   display: inline-block;
   background-color: #ee3643;
-  font-size: 21px;
+  font-size: 24px;
   line-height: 42px; /* для вертикальной центровки текста */
   width: 220px;
   text-transform: uppercase;
@@ -188,7 +188,7 @@ body {
 }
 
 .user-login {
-  margin-left: 27px;
+  margin-left: 17px;
   margin-right: 10px;
   width: 121px;
 }
@@ -237,6 +237,98 @@ body {
 
 }
 
+main.container {
+  margin-top: 60px;
+}
+
+main.container section,
+main.container > div {
+  margin-left: 10px;
+}
+
+.promo-block {
+  width: 940px;
+}
+
+.promo-top {
+  min-height: 123px;
+  outline: red 1px solid;
+  margin-bottom: 20px;
+}
+
+.promo-bottom {
+  min-height: 266px;
+}
+
+.shop-feature {
+  width: 300px;
+  min-height: 123px;
+  outline: green 1px solid;
+}
+
+.promo-top .shop-feature {
+  margin-left: 0;
+  float: left;
+  margin-right: 20px;
+}
+
+.promo-top .shop-feature:first-child {
+  background-color: #f6b22d;
+}
+
+.promo-top .shop-feature:last-child {
+  margin-right: 0;
+}
+
+.promo-bottom .shop-feature {
+  float: right;
+}
+
+.promo-bottom .shop-feature:last-child {
+  margin-top: 20px;
+  background-color: #f6b22d;
+}
+
+.shop-feature h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "CuprumBold";
+  font-weight: bold;
+  color: red;
+  margin-top: 20px;
+  margin-left: 23px;
+  margin-bottom: 0;
+}
+
+.shop-feature-link {
+  width: 135px;
+  min-height: 18px;
+  padding: 10px 0;
+  text-align: center;
+  outline: blue 1px solid;
+  margin-left: 25px;
+  margin-top: 12px;
+}
+
+.shop-feature-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.slider-items {
+  float: left;
+  margin-left: 0;
+  width: 620px;
+  min-height: 266px;
+  background-color: #a49586;
+}
+
+.invisible {
+  display: none;
+}
+
 .slider-items h2 {
   font-size: 36px;
   line-height: 30px;
@@ -276,13 +368,6 @@ body {
   color: black;
 }
 
-.shop-feature h3 {
-  font-size: 24px;
-  line-height: 30px;
-  font-family: "CuprumBold";
-  font-weight: bold;
-  color: white;
-}
 
 .popular h3 {
   font-size: 30px;
