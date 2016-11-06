@@ -18,6 +18,11 @@
   src: url(../fonts/PTSansRegular.ttf);
 }
 
+@font-face {
+  font-family: "PTSansBold";
+  src: url(../fonts/PTSansBold.ttf);
+}
+
 body {
   font-size: 16px;
   line-height: 16px;
@@ -241,52 +246,48 @@ main.container {
   margin-top: 60px;
 }
 
-main.container section,
+main.container > section,
 main.container > div {
   margin-left: 10px;
 }
 
 .promo-block {
   width: 940px;
-}
-
-.promo-top {
-  min-height: 123px;
-  outline: red 1px solid;
-  margin-bottom: 20px;
-}
-
-.promo-bottom {
-  min-height: 266px;
+  min-height: 410px;
+  margin-bottom: 53px;
 }
 
 .shop-feature {
+  float: right;
   width: 300px;
   min-height: 123px;
-  outline: green 1px solid;
 }
 
-.promo-top .shop-feature {
-  margin-left: 0;
-  float: left;
-  margin-right: 20px;
+.shop-feature:first-child,
+.shop-feature:nth-child(2) {
+  margin-left: 20px;
 }
 
-.promo-top .shop-feature:first-child {
-  background-color: #f6b22d;
-}
-
-.promo-top .shop-feature:last-child {
-  margin-right: 0;
-}
-
-.promo-bottom .shop-feature {
-  float: right;
-}
-
-.promo-bottom .shop-feature:last-child {
+.shop-feature:last-child,
+.shop-feature:nth-child(4) {
   margin-top: 20px;
+}
+
+.shop-feature:nth-child(3),
+.shop-feature:last-child {
   background-color: #f6b22d;
+}
+
+.shop-feature:nth-child(2) {
+  background-color: #4aafde;
+}
+
+.shop-feature:first-child {
+  background-color: #cc79d1;
+}
+
+.shop-feature:nth-child(4) {
+  background-color: #85d179;
 }
 
 .shop-feature h3 {
@@ -294,7 +295,7 @@ main.container > div {
   line-height: 30px;
   font-family: "CuprumBold";
   font-weight: bold;
-  color: red;
+  color: white;
   margin-top: 20px;
   margin-left: 23px;
   margin-bottom: 0;
@@ -308,6 +309,7 @@ main.container > div {
   outline: blue 1px solid;
   margin-left: 25px;
   margin-top: 12px;
+  border-radius: 2px;
 }
 
 .shop-feature-link a {
@@ -320,9 +322,10 @@ main.container > div {
 .slider-items {
   float: left;
   margin-left: 0;
+  margin-top: 20px;
   width: 620px;
   min-height: 266px;
-  background-color: #a49586;
+  background-image: url(../img/slides/perforators.jpg);
 }
 
 .invisible {
@@ -336,6 +339,142 @@ main.container > div {
   font-weight: bold;
   font-family: "CuprumBold";
   text-transform: uppercase;
+  margin-left: 25px;
+  margin-top: 25px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+
+.slider-items p {
+  font-family: "PTSansRegular";
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 25px;
+  margin-top: 0;
+  margin-bottom: 97px;
+  padding-bottom: 15px;
+}
+
+.button {
+  background-color: #ee3643;
+  min-height: 18px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.slider-items .button {
+  width: 195px;
+  margin-left: 25px;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "CuprumRegular";
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.popular {
+  width: 940px;
+  min-height: 867px;
+}
+
+.popular h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "CuprumRegular";
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.popular-things {
+  min-height: 89px;
+  background-color: #f7f3ec;
+  margin-bottom: 20px;
+}
+
+.popular-things h3 {
+  float: left;
+}
+
+.popular-things .button {
+  width: 253px;
+  float: right;
+  margin-top: 25px;
+  margin-right: 24px;
+}
+
+.popular-things h3 {
+  margin-left: 30px;
+}
+
+.popular-items {
+  margin-left: 0;
+  min-height: 318px;
+  outline: red 1px solid;
+}
+
+.popular-items article {
+  /* общая ширина * высота без границы 316х218 */
+  display: inline-block;
+  width: 214px;
+  min-height: 312px;
+  padding: 2px;
+  border: 1px solid #e5e5e5;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.popular-items article:last-child {
+  margin-right: 0;
+}
+
+.item-picture {
+  width: 210px;
+  min-height: 170px;
+  padding: 2px;
+  outline: green 1px solid;
+}
+
+.item-name {
+  font-family: "PTSansBold";
+  color: black;
+  text-align: center;
+  width: 160px;
+  padding: 3px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 9px;
+}
+
+.item-old-price {
+  font-family: "PTSansBold";
+  text-decoration: line-through;
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  margin: 0 auto 10px;
+  outline: red 1px solid;
+}
+
+.button-price {
+  width: 140px;
+  margin: 0 auto;
+}
+
+.button-price a {
+  font-family: "PTSansBold";
+  color: white;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .services h2 {
@@ -366,15 +505,6 @@ main.container > div {
   line-height: 18px;
   font-family: "CuprumRegular";
   color: black;
-}
-
-
-.popular h3 {
-  font-size: 30px;
-  line-height: 30px;
-  font-family: "CuprumRegular";
-  color: #32425c;
-  text-transform: uppercase;
 }
 
 .services h3 {
