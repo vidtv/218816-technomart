@@ -48,13 +48,13 @@
         <nav class="shop-navigation container">
             <ul>
               <li>
-                <a href="#">Главная</a>
+                <a href="index.html">Главная</a>
               </li
               ><li>
                 <a href="#">Компания</a>
               </li
               ><li>
-                <a href="#">Каталог</a>
+                <a href="catalog.html">Каталог</a>
               </li
               ><li>
                 <a href="#">Новости</a>
@@ -72,11 +72,11 @@
         </nav>
     </header>
     <main class="container">
-      <section class="promo-block promo-top">
+      <section class="promo-block">
         <div class="shop-feature">
-          <h3>Материалы</h3>
+          <h3>Техника</h3>
           <div class="shop-feature-link">
-            <a href="#">На любой вкус</a>
+            <a href="#">Для стройки</a>
           </div>
         </div>
         <div class="shop-feature">
@@ -86,13 +86,17 @@
           </div>
         </div>
         <div class="shop-feature">
-          <h3>Техника</h3>
+          <h3>Материалы</h3>
           <div class="shop-feature-link">
-            <a href="#">Для стройки</a>
+            <a href="#">На любой вкус</a>
           </div>
         </div>
-      </section>
-      <section class="promo-block promo-bottom">
+        <div class="shop-feature">
+          <h3>Скидки 50%</h3>
+          <div class="shop-feature-link">
+            <a href="#">На 350 товаров</a>
+          </div>
+        </div>
         <div class="slider-items">
           <div class="slide-perforator">
             <h2>Перфораторы</h2>
@@ -104,16 +108,12 @@
           </div>
           <button class="btn prev-slide invisible"></button>
           <button class="btn next-slide invisible"></button>
-          <a class="button" href="#">Открыть каталог</a>
-          <div class="slider-indicator">
+          <div class="button">
+            <a href="#">Открыть каталог</a>
+          </div>
+          <div class="slider-indicator invisible">
             <input type="radio" name="slide" value="1">
             <input type="radio" name="slide" value="2">
-          </div>
-        </div>
-        <div class="shop-feature">
-          <h3>Скидки 50%</h3>
-          <div class="shop-feature-link">
-            <a href="#">На 350 товаров</a>
           </div>
         </div>
         <div class="shop-feature">
@@ -126,32 +126,50 @@
       <section class="popular">
         <div class="popular-things">
           <h3>Популярные товары:</h3>
-          <a class="button" href="#">Все популярные товары</a>
+          <div class="button">
+            <a href="#">Все популярные товары</a>
+          </div>
         </div>
         <section class="popular-items">
           <article>
-              <img src="img/items/bosch_BFG_9000.jpg" width="100" height="100" alt="Bosch BFG 9000">
-              <p class="item-name">Перфоратор BOSCH BFG 9000</p>
-              <p class="item-old-price">32500 р.</p>
-              <button type="button" class="button-price">25500 р.</button>
-          </article>
-          <article>
-              <img src="img/items/bosch_BFG_3000.jpg" width="100" height="100" alt="Bosch BFG 3000">
-              <p class="item-name">Перфоратор BOSCH BFG 3000</p>
-              <p class="item-old-price">22500 р.</p>
-              <button type="button" class="button-price">15500 р.</button>
-          </article>
-          <article>
-              <img src="img/items/bosch_BFG_6000.jpg" width="100" height="100" alt="Bosch BFG 6000">
+            <div class="item-picture">
+              <img src="img/items/bosch_BFG_9000.jpg" width="197" height="166" alt="Bosch BFG 9000">
+            </div>
+            <p class="item-name">Перфоратор BOSCH BFG 9000</p>
+            <p class="item-old-price">32500 р.</p>
+            <div class="button button-price">
+              <a href="#">25500 р.</a>
+            </div>
+          </article
+          ><article>
+            <div class="item-picture">
+              <img src="img/items/bosch_BFG_3000.jpg" width="163" height="137" alt="Bosch BFG 3000">
+            </div>
+            <p class="item-name">Перфоратор BOSCH BFG 3000</p>
+            <p class="item-old-price">22500 р.</p>
+            <div class="button button-price">
+              <a href="#">15500 р.</a>
+            </div>
+          </article
+          ><article>
+            <div class="item-picture">
+              <img src="img/items/bosch_BFG_6000.jpg" width="167" height="146" alt="Bosch BFG 6000">
+            </div>
               <p class="item-name">Перфоратор BOSCH BFG 6000</p>
               <p class="item-old-price">30500 р.</p>
-              <button type="button" class="button-price">25500 р.</button>
-          </article>
-          <article>
-              <img src="img/items/bosch_BFG_2000.jpg" width="100" height="100" alt="Bosch BFG 2000">
-              <p class="item-name">Перфоратор BOSCH BFG 2000</p>
-              <p class="item-old-price"></p>
-              <button type="button" class="button-price">12500 р.</button>
+              <div class="button button-price">
+                <a href="#">25500 р.</a>
+              </div>
+          </article
+          ><article>
+            <div class="item-picture">
+              <img src="img/items/bosch_BFG_2000.jpg" width="155" height="137" alt="Bosch BFG 2000">
+            </div>
+            <p class="item-name">Перфоратор BOSCH BFG 2000</p>
+            <p class="item-old-price"><br></p>
+            <div class="button button-price">
+              <a href="#">12500 р.</a>
+            </div>
           </article>
         </section>
         <div class="popular-things">
