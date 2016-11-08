@@ -55,6 +55,7 @@ body {
   display: inline-block;
   background-color: #ee3643;
   font-size: 24px;
+  color: white;
   line-height: 42px; /* для вертикальной центровки текста */
   width: 220px;
   text-transform: uppercase;
@@ -242,13 +243,13 @@ body {
 
 }
 
-main.container {
+main {
   margin-top: 60px;
 }
 
-main.container > section,
-main.container > div {
-  margin-left: 10px;
+main > section,
+main > div {
+  padding: 10px;
 }
 
 .promo-block {
@@ -382,6 +383,7 @@ main.container > div {
 .popular {
   width: 940px;
   min-height: 867px;
+  margin-bottom: 65px;
 }
 
 .popular h3 {
@@ -416,7 +418,7 @@ main.container > div {
 .popular-items {
   margin-left: 0;
   min-height: 318px;
-  outline: red 1px solid;
+  margin-bottom: 21px;
 }
 
 .popular-items article {
@@ -438,7 +440,6 @@ main.container > div {
   width: 210px;
   min-height: 170px;
   padding: 2px;
-  outline: green 1px solid;
 }
 
 .item-name {
@@ -462,7 +463,6 @@ main.container > div {
   line-height: 18px;
   text-align: center;
   margin: 0 auto 10px;
-  outline: red 1px solid;
 }
 
 .button-price {
@@ -477,11 +477,198 @@ main.container > div {
   line-height: 18px;
 }
 
+.popular-manufacturers {
+  width: 940px;
+  padding-bottom: 20px;
+}
+
+.popular-manufacturers article {
+  display: inline-block;
+  width: 208px;
+  min-height: 133px;
+  line-height: 130px;
+  padding: 5px;
+  border: 1px solid #e5e5e5;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.popular-manufacturers article:nth-child(4),
+.popular-manufacturers article:last-child {
+  margin-right: 0;
+}
+
+.popular-manufacturers img {
+  vertical-align: middle;
+}
+
+.services {
+  background-color: #f2f6f8;
+  min-height: 502px;
+  margin-bottom: 32px;
+}
+
+.services .container {
+  width: 960px;
+}
+
+.services h3 {
+  margin-top: 58px;
+  margin-bottom: 0;
+  font-size: 30px;
+  line-height: 24px;
+  font-family: "CuprumRegular";
+  color: black;
+  text-transform: uppercase;
+}
+
+.services h3,
+.services p,
+.services-select {
+  margin-left: 10px;
+}
+
+.services p {
+  font-family: "PTSansRegular";
+  font-size: 13px;
+  line-height: 24px;
+  width: 470px;
+  padding: 10px 10px 10px 0;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
 .services h2 {
+  text-transform: uppercase;
   font-size: 36px;
   line-height: 24px;
   color: #32425c;
   font-family: "CuprumRegular";
+}
+
+.services label {
+  line-height: 61px;
+}
+
+.services label:first-child {
+  margin-bottom: 40px;
+}
+
+.services-slider {
+  float: left;
+  width: 250px;
+  min-height: 250px;
+  margin-right: 70px;
+}
+
+.service-description {
+  width: 610px;
+  float: left;
+  min-height: 300px;
+  padding: 10px;
+}
+
+.service-description h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.service-description p {
+  margin: 0;
+}
+
+.delivery {
+  background: url(../img/services/delivery.png) right bottom no-repeat;
+}
+
+.guarantee {
+  background: url(../img/services/guarantee.png) right bottom no-repeat;
+}
+
+.credit {
+  background: url(../img/services/credit.png) right bottom no-repeat;
+}
+
+.delivery p {
+  width: 280px;
+}
+
+.guarantee p {
+  width: 375px;
+}
+
+.credit p {
+  width: 285px;
+  margin-bottom: 20px;
+}
+
+.credit .button {
+  width: 195px;
+}
+
+.company-info {
+  padding: 10px;
+  outline: green 1px solid;
+  min-height: 484px;
+}
+
+.company-info p {
+  font-family: "PTSansRegular";
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.company-description {
+  float: left;
+  width: 540px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.company-description h3 {
+  line-height: normal;
+}
+
+.company-description p {
+  width: 540px;
+  margin-bottom: 20px;
+}
+
+.company-description li {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.company-description .button {
+  margin-top: 40px;
+  width: 220px;
+}
+
+.company-contacts {
+  float: right;
+  width: 300px;
+}
+
+.company-contacts h3 {
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+
+.company-contacts p {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.company-contacts img {
+  margin-bottom: 40px;
+}
+
+.logo-footer {
+  min-height: 63px;
+  font-size: 30px;
+  line-height: 63px; /* для вертикальной центровки текста */
 }
 
 .catalog-category-name h2 {
@@ -507,25 +694,9 @@ main.container > div {
   color: black;
 }
 
-.services h3 {
-  font-size: 30px;
-  line-height: 24px;
-  font-family: "CuprumRegular";
-  color: black;
-  text-transform: uppercase;
-}
-
 .company-info h3 {
   font-size: 30px;
   font-family: "CuprumRegular";
   color: black;
   text-transform: uppercase;
-}
-
-.company-description h3 {
-  line-height: normal;
-}
-
-.company-contacts h3 {
-  line-height: 24px;
 }
