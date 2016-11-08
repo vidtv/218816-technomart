@@ -71,8 +71,8 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
-      <section class="promo-block">
+    <main>
+      <section class="promo-block container">
         <div class="shop-feature">
           <h3>Техника</h3>
           <div class="shop-feature-link">
@@ -123,7 +123,7 @@
           </div>
         </div>
       </section>
-      <section class="popular">
+      <section class="popular container">
         <div class="popular-things">
           <h3>Популярные товары:</h3>
           <div class="button">
@@ -174,105 +174,118 @@
         </section>
         <div class="popular-things">
           <h3>Популярные производители:</h3>
-          <a class="button" href="#">Все производители</a>
+          <div class="button">
+            <a href="#">Все производители</a>
+          </div>
         </div>
         <section class="popular-manufacturers">
           <article>
             <a href="#">
-              <img src="img/manufacturers/bosch.jpg" width="100" height="100" alt="Bosch">
+              <img src="img/manufacturers/bosch.jpg" width="126" height="39" alt="Bosch">
             </a>
-          </article>
-          <article>
+          </article
+          ><article>
             <a href="#">
-              <img src="img/manufacturers/makita.jpg" width="100" height="100" alt="Makita">
+              <img src="img/manufacturers/makita.jpg" width="124" height="45s" alt="Makita">
             </a>
-          </article>
-          <article>
+          </article
+          ><article>
             <a href="#">
-              <img src="img/manufacturers/dewalt.jpg" width="100" height="100" alt="Dewalt">
+              <img src="img/manufacturers/dewalt.jpg" width="146" height="49" alt="Dewalt">
             </a>
-          </article>
-          <article>
+          </article
+          ><article>
             <a href="#">
-              <img src="img/manufacturers/interskol.jpg" width="100" height="100" alt="Interskol">
+              <img src="img/manufacturers/interskol.jpg" width="202" height="103" alt="Interskol">
             </a>
-          </article>
-          <article>
+          </article
+          ><article>
             <a href="#">
-              <img src="img/manufacturers/hitachi.jpg" width="100" height="100" alt="Hitachi">
+              <img src="img/manufacturers/hitachi.jpg" width="174" height="33" alt="Hitachi">
             </a>
-          </article>
-          <article>
+          </article
+          ><article>
             <a href="#">
-              <img src="img/manufacturers/lg.jpg" width="100" height="100" alt="LG">
+              <img src="img/manufacturers/lg.jpg" width="124" height="75" alt="LG">
             </a>
-          </article>
-          <article>
+          </article
+          ><article>
             <a href="#">
-              <img src="img/manufacturers/aeg.jpg" width="100" height="100" alt="AEG">
+              <img src="img/manufacturers/aeg.jpg" width="152" height="99" alt="AEG">
             </a>
-          </article>
-          <article>
+          </article
+          ><article>
             <a href="#">
-              <img src="img/manufacturers/metabo.jpg" width="100" height="100" alt="Metabo">
+              <img src="img/manufacturers/metabo.jpg" width="208" height="77" alt="Metabo">
             </a>
           </article>
         </section>
       </section>
       <div class="services">
-        <h3>Сервисы</h3>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами.<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-        <div class="services-select">
-          <input type="radio" name="service" id="delivery" checked><label for="delivery">Доставка</label>
-          <div class="service-description delivery">
-            <h2>Доставка</h2>
-            <p>Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, поднимая его на&nbsp;ваш этаж!
-            </p>
-          </div>
-          <input type="radio" name="service" id="guarantee"><label for="guarantee">Гарантия</label><br>
-          <div class="service-description guarantee invisible">
-            <h2>Гарантия</h2>
-            <p>Если купленный у нас товар поломается или заискрит, а&nbsp;также в&nbsp;случае пожара, спровоцированного его возгоранием,
-              вы&nbsp;всегда можете быть уверены в&nbsp;нашей гарантии. Мы&nbsp;обменяем сгоревший товар на&nbsp;новый. Дом уж&nbsp;восстановите как-нибудь сами.
-            </p>
-          </div>
-          <input type="radio" name="service" id="credit"><label for="credit">Кредит</label>
-          <div class="service-description credit invisible">
-            <h2>Кредит</h2>
-            <p>Залезть в&nbsp;долговую яму стало проще!
-              Кредитные консультанты придут к&nbsp;вам на&nbsp;помощь.
-            </p>
+        <div class="container">
+          <h3>Сервисы</h3>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+          <div class="services-select clearfix">
+            <div class="services-slider">
+              <input type="radio" name="service" id="delivery" checked><label for="delivery">Доставка</label><br>
+              <input type="radio" name="service" id="guarantee"><label for="guarantee">Гарантия</label><br>
+              <input type="radio" name="service" id="credit"><label for="credit">Кредит</label>
+            </div>
+            <div class="service-description delivery">
+              <h2>Доставка</h2>
+              <p>Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно!
+                Ведь&nbsp;мы неплохо заработаем, поднимая&nbsp;его&nbsp;на&nbsp;ваш&nbsp;этаж!
+              </p>
+            </div>
+            <div class="service-description guarantee invisible">
+              <h2>Гарантия</h2>
+              <p>Если купленный у нас товар поломается или заискрит, а&nbsp;также&nbsp;в&nbsp;случае пожара, спровоцированного его возгоранием,
+                вы&nbsp;всегда можете быть уверены в&nbsp;нашей гарантии. Мы&nbsp;обменяем сгоревший товар на&nbsp;новый.<br>Дом уж&nbsp;восстановите как-нибудь сами.
+              </p>
+            </div>
+            <div class="service-description credit invisible">
+              <h2>Кредит</h2>
+              <p>Залезть в&nbsp;долговую яму стало проще!
+                Кредитные консультанты придут к&nbsp;вам на&nbsp;помощь.
+              </p>
+              <div class="button">
+                <a href="#">Отправить заявку</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="company-info">
+      <div class="company-info container">
         <div class="company-description">
           <h3>Компания "Техномарт"</h3>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
           строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p>Мы можем доставить наш товар в самые отдаленные точки России!
+          <p>Мы можем доставить наш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:</p>
           <ul>
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="#">Подробнее о компании</a>
+          <div class="button">
+            <a href="#">Подробнее о компании</a>
+          </div>
         </div>
         <div class="company-contacts">
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами,
           заехав в наш офис:</p>
-          <img src="img/map-small.jpg" width="250" height="110" alt="Наш офис">
-          <a class="button" href="#">Заблудились? Напишите нам!</a>
+          <img src="img/map-small.jpg" width="300" height="160" alt="Наш офис">
+          <div class="button">
+            <a href="#">Заблудились? Напишите нам!</a>
+          </div>
         </div>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="footer-top">
+      <div class="footer-top container">
         <div class="logo logo-footer">Техномарт</div>
         <nav class="shop-navigation">
           <ul>
@@ -313,18 +326,20 @@
         </nav>
       </div>
       <div class="footer-contacts">
-        <p>© 2010-2016 Компания "Техномарт"<br>
-        Все права защищены.</p>
-        <div class="social-networks">
-          <a class="social-btn social-btn-vk" href="#"></a>
-          <a class="social-btn social-btn-fb" href="#"></a>
-          <a class="social-btn social-btn-inst" href="#"></a>
-        </div>
-        <div class="shop-feedback">
-          <p>Обратная связь:<br>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p>Разработано &ndash;<br>
-            <a href="htmlacademy.ru">htmlacademy.ru</a></p>
+        <div class="container">
+          <p>© 2010-2016 Компания "Техномарт"<br>
+          Все права защищены.</p>
+          <div class="social-networks">
+            <a class="social-btn social-btn-vk" href="#"></a>
+            <a class="social-btn social-btn-fb" href="#"></a>
+            <a class="social-btn social-btn-inst" href="#"></a>
+          </div>
+          <div class="shop-feedback">
+            <p>Обратная связь:<br>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p>Разработано &ndash;<br>
+              <a href="htmlacademy.ru">htmlacademy.ru</a></p>
+          </div>
         </div>
       </div>
     </footer>
