@@ -665,11 +665,77 @@ main > div {
   margin-bottom: 40px;
 }
 
+.main-footer {
+  background-color: #32425c;
+}
+
+.footer-top {
+  min-height: 68px;
+  padding: 0 10px 7px;
+  outline: yellow 1px solid;
+}
+
+.footer-top li {
+  vertical-align: bottom;
+  padding: 2px;
+}
+
+.main-footer li:first-child {
+  margin-left: 0;
+}
+
+.main-footer li:last-child {
+  margin-right: 0;
+}
+
 .logo-footer {
+  display: inline-block;
+  vertical-align: top;
   min-height: 63px;
   font-size: 30px;
   line-height: 63px; /* для вертикальной центровки текста */
+  margin-right: 163px;
+  margin-left: 0;
 }
+
+.main-footer .shop-navigation {
+  border: none;
+  vertical-align: bottom;
+  min-height: 25px;
+  margin-top: 15px;
+  width: 560px;
+  display: inline-block;
+}
+
+.main-footer a {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-mid {
+  min-height: 118px;
+  outline: 1px white solid;
+  padding: 0 10px;
+}
+
+.footer-mid p {
+  display: inline-block;
+  padding: 3px;
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-mid .shop-navigation {
+  display: inline-block;
+  width: 560px;
+}
+
+.items-navigation a {
+  color: #ffd180;
+}
+
 
 .catalog-category-name h2 {
   font-size: 30px;
