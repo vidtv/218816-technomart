@@ -312,12 +312,12 @@ body {
 
 }
 
-main {
+.index-main {
   margin-top: 60px;
 }
 
-main > section,
-main > div {
+.index-main > section,
+.index-main > div {
   padding: 10px;
 }
 
@@ -490,7 +490,8 @@ main > div {
   margin-bottom: 21px;
 }
 
-.popular-items article {
+.popular-items article,
+.catalog-items-list article {
   /* общая ширина * высота без границы 316х218 */
   display: inline-block;
   width: 214px;
@@ -501,7 +502,8 @@ main > div {
   margin-right: 20px;
 }
 
-.popular-items article:last-child {
+.popular-items article:last-child,
+.catalog-items-list article:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -974,9 +976,10 @@ main > div {
 }
 
 .catalog-category {
-  outline: blue 1px solid;
+  width: 940px;
   min-height: 148px;
   margin-bottom: 20px;
+  padding: 0 10px;
 }
 
 .breadcrumps {
@@ -1032,12 +1035,236 @@ main > div {
   margin: 0;
 }
 
+.catalog-main {
+  width: 940px;
+}
+
+.filters {
+  float: left;
+  width: 220px;
+}
+
+.filter-header {
+  min-height: 18px;
+  padding: 10px;
+  background-color: #f7f3ec;
+  border-radius: 2px;
+}
+
+.filter-header p {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "PTSansRegular";
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.filter-price {
+  margin-bottom: 25px;
+}
+
+.filters h4 {
+  text-transform: uppercase;
+  font-family: "PTSansBold";
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter-price h4 {
+  margin-top: 14px;
+  margin-bottom: 15px;
+}
+
+.filter-input {
+  min-height: 80px;
+  background-color: #f7f3ec;
+  border-radius: 0 0 4px 4px;
+}
+
+.filter-range input,
+.filter-range p {
+  display: inline-block;
+}
+
+.filter-range input {
+  width: 75px;
+  border: none;
+  border-radius: 2px;
+  background-color: #f7f3ec;
+  font-family: "PTSansRegular";
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 9px;
+}
+
+.filter-range p {
+  margin: 0 10px;
+  width: 10px;
+}
+
+.filter-manufacturer h4 {
+  margin-top: 25px;
+}
+
+.filter-manufacturer input {
+  margin-bottom: 25px;
+}
+
+.filters label {
+  font-family: "PTSansRegular";
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-manufacturer label {
+  font-size: 15px;
+}
+
+.filter-power input {
+  margin-bottom: 25px;
+}
+
+.filter-power label {
+  font-size: 14px;
+}
+
+.filters button {
+  margin-top: 50px;
+  width: 140px;
+  font-family: "PTSansRegular";
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  padding: 9px;
+}
+
+.catalog-items {
+  float: right;
+  width: 700px;
+  margin-bottom: 60px;
+}
+
+.catalog-sort {
+  width: 680px;
+  min-height: 18px;
+  padding: 10px;
+  background-color: #f7f3ec;
+  border-radius: 2px;
+}
+
+.catalog-sort p,
+.catalog-sort a {
+  display: inline-block;
+  font-family: "PTSansRegular";
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-sort p {
+  margin: 0 130px 0 9px;
+}
+
+.catalog-sort .sort-type-active {
+  color: #ee3643;
+  border: none;
+}
+
+.catalog-sort a {
+  border: none;
+  background-color: #f7f3ec;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px dotted #ee3643;
+  color: #acaaa5;
+}
+
+.catalog-sort a:nth-child(2) {
+  margin-right: 71px;
+}
+
+.catalog-sort a:nth-child(3) {
+  margin-right: 65px;
+}
+
+.catalog-sort a:nth-child(4) {
+  margin-right: 46px;
+}
+
+.catalog-sort a:nth-child(5) {
+  margin-right: 21px;
+}
+
+.catalog-sort .sort-order {
+  width: 10px;
+  min-height: 11px;
+  outline: red 1px solid;
+  border: none;
+}
+
+.catalog-items-list article {
+  margin-top: 20px;
+}
+
+.catalog-items-list {
+  margin-bottom: 52px;
+}
+
+.catalog-items-pages a {
+  display: inline-block;
+  width: 14px;
+  padding: 9px 11px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "PTSansRegular";
+  font-size: 13px;
+  line-height: 18px;
+  margin-right: 10px;
+  border: 1px #e5e5e5 solid;
+  border-radius: 2px;
+  color: black;
+}
+
+.catalog-items-pages .page-current {
+  background-color: #ee3643;
+  color: white;
+  border: 1px #ee3643 solid;
+}
+
+.catalog-items-pages .page-next {
+  width: 116px;
+  text-transform: uppercase;
+}
+
+.catalog-category-about {
+  background-color: #f2f6f8;
+}
+
+.catalog-category-about .container {
+  padding: 10px;
+  width: 940px;
+  min-height: 251px;
+}
+
 .catalog-category-about h2 {
+  margin-top: 58px;
+  margin-bottom: 39px;
   font-size: 30px;
   line-height: 24px;
   font-family: "CuprumRegular";
   color: black;
   text-transform: uppercase;
+}
+
+.catalog-category-about p {
+  font-family: "PTSansRegular";
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .basket-message h2 {
