@@ -61,7 +61,11 @@ body {
   text-transform: uppercase;
   min-height: 42px;
   text-align: center;
-  margin: 0 10px;
+  margin-left: 10px;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
 }
 
 .logo a {
@@ -69,19 +73,45 @@ body {
   text-decoration: none;
 }
 
-.top-menu input {
+.search {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 221px;
+  min-height: 42px;
+  padding-left: 49px;
+}
+
+.search:hover,
+.bookmarks:hover,
+.basket:hover {
+  background-color: #212a3a;
+}
+
+.search input {
   background-color: inherit;
   color: white;
-  margin-left: 30px;
-  margin-right: 10px;
   font-family: "CuprumRegular";
   font-size: 17px;
   line-height: 18px;
-  width: 210px;
+  margin: 11px 0;
+  width: 220px;
+  border: none;
+}
+
+.search::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 17px;
+  background-image: url(../img/icons/spritesheet.png);
+  background-position: -126px -5px;
+  width: 17px;
+  height: 17px;
 }
 
 .order-block {
-  width: 456px;
+  width: 450px;
   display: inline-block;
   vertical-align: top;
   text-align: right;
@@ -101,17 +131,36 @@ body {
   padding: 12px 0;
 }
 
-.bookmarks {
-  width: 140px;
-  margin-right: 10px;
+.bookmarks,
+.basket {
+  position: relative;
+  width: 150px;
 }
 
 .bookmarks a {
   margin-right: 18px;
 }
 
-.basket {
-  width: 150px;
+.bookmarks::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 16px;
+  top: 12px;
+  left: 17px;
+  background-image: url(../img/icons/spritesheet.png);
+  background-position: -32px -5px;
+}
+
+.basket::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 16px;
+  top: 12px;
+  left: 17px;
+  background-image: url(../img/icons/spritesheet.png);
+  background-position: -5px -5px;
 }
 
 .basket-active {
