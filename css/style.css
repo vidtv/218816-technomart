@@ -609,13 +609,15 @@ body {
 
 button.prev-slide {
   float: left;
-  background: url(../img/icons/icon-prev-slide.png) no-repeat;
+  background: url(../img/icons/spritesheet.png) no-repeat;
+  background-position: -100px -5px;
   margin-left: 25px;
 }
 
 button.next-slide {
   float: right;
-  background: url(../img/icons/icon-next-slide.png) no-repeat;
+  background: url(../img/icons/spritesheet.png) no-repeat;
+  background-position: -68px -5px;
   margin-right: 20px;
 }
 
