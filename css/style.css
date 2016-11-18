@@ -56,8 +56,9 @@ body {
 }
 
 .container {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .clearfix::after {
@@ -82,12 +83,16 @@ body {
   background-color: #ee3643;
   font-size: 24px;
   color: white;
-  line-height: 42px; /* для вертикальной центровки текста */
   width: 220px;
   text-transform: uppercase;
-  min-height: 42px;
+  min-height: 17px;
+  padding-top: 14px;
+  padding-bottom: 11px;
   text-align: center;
-  margin-left: 10px;
+}
+
+.logo-footer {
+  padding: 0;
 }
 
 .logo:hover {
@@ -123,7 +128,7 @@ body {
   vertical-align: top;
   width: 221px;
   min-height: 42px;
-  padding-left: 49px;
+  padding-left: 48px;
 }
 
 .search:hover,
@@ -182,7 +187,7 @@ body {
 }
 
 .bookmarks a {
-  margin-right: 18px;
+  margin-right: 28px;
 }
 
 .bookmarks::before {
@@ -226,21 +231,22 @@ body {
 }
 
 .shop-info {
-  min-height: 160px;
+  min-height: 158px;
 }
 
 .shop-description {
   display: inline-block;
-  min-height: 160px;
-  width: 300px;
-  margin: 0 10px;
+  width: 290px;
+  padding: 0 5px 5px;
+  margin-right: 10px;
+  margin-left: 0;
 }
 
 .shop-description p {
   width: 200px;
   padding: 10px;
-  margin-top: 40px;
-  margin-left: 45px;
+  margin-top: 39px;
+  margin-left: 37px;
   margin-bottom: 0;
   color: #ee3643;
   font-size: 16px;
@@ -251,8 +257,9 @@ body {
 .shop-contacts {
   display: inline-block;
   margin-right: 10px;
-  width: 320px;
-  min-height: 160px;
+  width: 310px;
+  padding: 0 5px 5px;
+  min-height: 153px;
   vertical-align: top;
 }
 
@@ -263,7 +270,7 @@ body {
   padding-left: 71px;
   min-height: 18px;
   border: 3px white solid;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-top: 45px;
   margin-bottom: 5px;
   color: #ee3643;
@@ -283,8 +290,9 @@ body {
 }
 
 .shop-address {
+  padding: 0 5px 5px;
   margin-top: 0;
-  margin-left: 10px;
+  margin-left: 9px;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -292,7 +300,6 @@ body {
 
 .user-block {
   display: inline-block;
-  min-height: 160px;
   vertical-align: top;
   width: 300px;
 }
@@ -308,7 +315,7 @@ body {
 
 .user-login {
   position: relative;
-  margin-left: 17px;
+  margin-left: 18px;
   margin-right: 10px;
   width: 73px;
   padding-left: 48px;
@@ -414,7 +421,7 @@ body {
 }
 
 .shop-navigation {
-  width: 940px;
+  padding: 0;
   background-color: #32425c;
   min-height: 55px;
   border-bottom: 5px solid #293449;
@@ -424,17 +431,11 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
-  vertical-align: middle;
 }
 
 .shop-navigation li {
   display: inline-block;
-  padding: 19px 10px;
-  margin-right: 40px;
-}
-
-.shop-navigation li:first-child {
-  margin-left: 42px;
+  margin: 0;
 }
 
 .shop-navigation a {
@@ -442,11 +443,27 @@ body {
   color: white;
   font-size: 17px;
   line-height: 17px;
+}
 
+.header-navigation li {
+  padding: 19px 30px;
+}
+
+.header-navigation li:first-child {
+  margin-left: 18px;
+  padding: 19px 34px;
+}
+
+.header-navigation li:nth-child(3) {
+  padding: 19px 29px;
+}
+
+.header-navigation li:last-child {
+  padding: 19px 34px;;
 }
 
 .index-main {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .index-main > section,
@@ -457,7 +474,7 @@ body {
 .promo-block {
   width: 940px;
   min-height: 410px;
-  margin-bottom: 53px;
+  margin-bottom: 31px;
 }
 
 .shop-feature {
@@ -503,7 +520,7 @@ body {
 .shop-materials::before {
   width: 44px;
   height: 65px;
-  top: 31px;
+  top: 30px;
   left: 213px;
   background-position: -93px -5px;
 }
@@ -522,7 +539,7 @@ body {
 .shop-tackle::before {
   width: 75px;
   height: 61px;
-  top: 33px;
+  top: 32px;
   left: 197px;
   background-position: -74px -80px;
 }
@@ -530,7 +547,7 @@ body {
 .shop-technics::before {
   width: 78px;
   height: 62px;
-  top: 31px;
+  top: 30px;
   left: 191px;
   background-position: -147px -5px;
 }
@@ -538,7 +555,7 @@ body {
 .shop-sales::before {
   width: 59px;
   height: 72px;
-  top: 26px;
+  top: 25px;
   left: 196px;
   background-position: -5px -80px;
 }
@@ -546,7 +563,7 @@ body {
 .shop-delivery::before {
   width: 78px;
   height: 63px;
-  top: 32px;
+  top: 31px;
   left: 191px;
   background-position: -5px -5px;
 }
@@ -558,17 +575,17 @@ body {
   font-weight: bold;
   color: white;
   margin-top: 20px;
-  margin-left: 23px;
+  margin-left: 22px;
   margin-bottom: 0;
 }
 
 .shop-feature-link {
   width: 135px;
   min-height: 18px;
-  padding: 10px 0;
+  padding: 11px 0 9px;
   text-align: center;
-  margin-left: 25px;
-  margin-top: 12px;
+  margin-left: 23px;
+  margin-top: 13px;
   border-radius: 2px;
   background-image: url(../img/opacity.png);
 }
@@ -587,10 +604,13 @@ body {
   margin-top: 20px;
   width: 620px;
   min-height: 266px;
+}
+
+.slide-perforator {
   background-image: url(../img/slides/perforators.jpg);
 }
 
-.slider-items .slide-drill {
+.slide-drill {
   background-image: url(../img/slides/drills.jpg);
 }
 
@@ -628,9 +648,9 @@ button.next-slide {
   font-weight: bold;
   font-family: "CuprumBold";
   text-transform: uppercase;
-  margin-left: 25px;
+  margin-left: 24px;
   margin-top: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   padding-right: 15px;
   margin-bottom: 0;
 }
@@ -640,9 +660,9 @@ button.next-slide {
   color: white;
   font-size: 18px;
   line-height: 24px;
-  margin-left: 25px;
+  margin-left: 24px;
   margin-top: 0;
-  margin-bottom: 97px;
+  margin-bottom: 107px;
   padding-bottom: 15px;
 }
 
@@ -676,7 +696,7 @@ button.next-slide {
   width: 10px;
   height: 10px;
   background-image: url(../img/slides/slider-indicator.png);
-  margin-right: 7px;
+  margin-right: 6px;
   cursor: pointer;
 }
 
@@ -696,15 +716,18 @@ button.next-slide {
 .popular {
   width: 940px;
   min-height: 867px;
-  margin-bottom: 65px;
+  margin-bottom: 45px;
 }
 
-.popular h3 {
+.popular-things h3 {
   font-size: 30px;
   line-height: 30px;
+  margin-top: 30px;
+  margin-left: 28px;
   font-family: "CuprumRegular";
   color: #32425c;
   text-transform: uppercase;
+  float: left;
 }
 
 .popular-things {
@@ -713,19 +736,11 @@ button.next-slide {
   margin-bottom: 20px;
 }
 
-.popular-things h3 {
-  float: left;
-}
-
 .popular-things .button {
   width: 253px;
   float: right;
   margin-top: 25px;
   margin-right: 24px;
-}
-
-.popular-things h3 {
-  margin-left: 30px;
 }
 
 .popular-items {
@@ -758,7 +773,7 @@ button.next-slide {
 .item-popular-new::after {
   position: absolute;
   content: "";
-  right: 0px;
+  right: -2px;
   bottom: 258px;
   width: 60px;
   height: 59px;
@@ -777,7 +792,7 @@ button.next-slide {
   color: black;
   text-align: center;
   width: 160px;
-  padding: 3px;
+  padding: 2px 3px 3px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 20px;
@@ -793,12 +808,18 @@ button.next-slide {
   line-height: 18px;
   text-align: center;
   margin: 0 auto 10px;
+  margin-left: 2px;
 }
 
 .button-price {
   width: 140px;
   margin: 0 auto;
+  margin-left: 40px;
   position: relative;
+}
+
+.popular-items span {
+  margin-left: 1px;
 }
 
 /* вырезаем нижний правый угол */
@@ -830,11 +851,17 @@ button.next-slide {
   color: white;
   font-size: 17px;
   line-height: 18px;
+  margin-left: -3px;
+}
+
+.manufacturers h3 {
+  margin-left: 24px;
 }
 
 .popular-manufacturers {
   width: 940px;
-  padding-bottom: 20px;
+  min-height: 310px;
+  padding-bottom: 10px;
 }
 
 .popular-manufacturers article {
@@ -861,11 +888,17 @@ button.next-slide {
 .services {
   background-color: #f2f6f8;
   min-height: 502px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .services .container {
-  width: 960px;
+  width: 1000px;
+}
+
+.services h3,
+.services p,
+.services .services-select {
+  margin-left: 30px;
 }
 
 .services h3 {
@@ -878,20 +911,14 @@ button.next-slide {
   text-transform: uppercase;
 }
 
-.services h3,
-.services p,
-.services-select {
-  margin-left: 10px;
-}
-
 .services p {
   font-family: "PTSansRegular";
   font-size: 13px;
   line-height: 24px;
   width: 470px;
   padding: 10px 10px 10px 0;
-  margin-top: 25px;
-  margin-bottom: 60px;
+  margin-top: 18px;
+  margin-bottom: 57px;
 }
 
 .services h2 {
@@ -911,7 +938,7 @@ button.next-slide {
   float: left;
   width: 240px;
   min-height: 182px;
-  margin-right: 80px;
+  margin-right: 70px;
 }
 
 .services-slider::after {
@@ -931,6 +958,7 @@ button.next-slide {
 .services label {
   display: inline-block;
   width: 208px;
+  font-family: "CuprumBold";
   font-size: 21px;
   line-height: 30px;
   padding: 16px 10px;
@@ -950,7 +978,7 @@ button.next-slide {
 }
 
 .service-description {
-  width: 610px;
+  width: 640px;
   float: left;
   min-height: 254px;
   padding: 10px;
@@ -958,8 +986,8 @@ button.next-slide {
 }
 
 .service-description h2 {
-  margin-top: 0;
-  margin-bottom: 25px;
+  margin-top: 7px;
+  margin-bottom: 20px;
 }
 
 .service-description p {
@@ -968,14 +996,17 @@ button.next-slide {
 
 .delivery {
   background: url(../img/services/delivery.png) right bottom no-repeat;
+  background-position: 160px 26px;
 }
 
 .guarantee {
   background: url(../img/services/guarantee.png) right bottom no-repeat;
+  background-position: 247px 4px;
 }
 
 .credit {
   background: url(../img/services/credit.png) right bottom no-repeat;
+  background-position: 190px 2px;
 }
 
 .delivery p {
@@ -987,8 +1018,8 @@ button.next-slide {
 }
 
 .credit p {
-  width: 285px;
-  margin-bottom: 20px;
+  width: 290px;
+  margin-bottom: 18px;
 }
 
 .credit .button {
@@ -997,7 +1028,7 @@ button.next-slide {
 
 .company-info {
   padding: 10px;
-  min-height: 484px;
+  min-height: 476px;
 }
 
 .company-info p {
@@ -1015,11 +1046,18 @@ button.next-slide {
 
 .company-description h3 {
   line-height: normal;
+  margin-top: 27px;
+  margin-bottom: 23px;
 }
 
 .company-description p {
   width: 540px;
   margin-bottom: 20px;
+}
+
+.company-description .mans-shopping {
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
 
 .company-description ul {
@@ -1045,7 +1083,7 @@ button.next-slide {
 }
 
 .company-description .button {
-  margin-top: 40px;
+  margin-top: 38px;
   width: 220px;
 }
 
@@ -1056,16 +1094,21 @@ button.next-slide {
 
 .company-contacts h3 {
   line-height: 24px;
-  margin-bottom: 35px;
+  margin-top: 32px;
+  margin-bottom: 28px;
 }
 
 .company-contacts p {
   width: 200px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .company-contacts img {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
+}
+
+.button-contacts a {
+  margin-left: 2px;
 }
 
 .main-footer {
@@ -1073,17 +1116,14 @@ button.next-slide {
 }
 
 .footer-top {
-  min-height: 68px;
-  padding: 0 10px 7px;
-}
-
-.footer-top li {
-  vertical-align: bottom;
+  padding: 0;
+  min-height: 67px;
+  padding-bottom: 1px;
 }
 
 .main-footer li {
-  margin-right: 58px;
-  padding: 1px;
+  margin-right: 59px;
+  padding: 1px 0;
 }
 
 .main-footer li:first-child {
@@ -1097,31 +1137,41 @@ button.next-slide {
 .logo-footer {
   display: inline-block;
   vertical-align: top;
-  min-height: 63px;
+  min-height: 30px;
   font-size: 30px;
-  line-height: 63px; /* для вертикальной центровки текста */
+  line-height: 30px;
   margin-right: 172px;
   margin-left: 0;
+  padding-top: 18px;
+  padding-bottom: 15px;
 }
 
 .main-footer .shop-navigation {
   border: none;
-  vertical-align: bottom;
+  vertical-align: top;
   min-height: 25px;
-  margin-top: 15px;
-  width: 555px;
   display: inline-block;
 }
 
+.footer-top .shop-navigation {
+  margin-top: 38px;
+  width: 548px;
+}
+
+.footer-top-navigation a {
+   font-size: 18px;
+   line-height: 24px;
+ }
+
 .footer-mid {
   min-height: 118px;
-  padding: 0 10px;
+  padding-bottom: 7px;
 }
 
 .footer-mid p {
   display: inline-block;
   padding: 3px;
-  margin-top: 20px;
+  margin-top: 24px;
   color: white;
   font-size: 18px;
   line-height: 24px;
@@ -1133,14 +1183,17 @@ button.next-slide {
 }
 
 .footer-mid .shop-navigation {
-  width: 540px;
-  vertical-align: top;
-  margin-top: 23px;
-  margin-left: 88px;
+  width: 525px;
+  margin-top: 27px;
+  margin-left: 85px;
 }
 
 .items-navigation a {
   color: #ffd180;
+}
+
+.items-navigation li {
+  margin-right: 59.5px;
 }
 
 .footer-contacts {
@@ -1161,7 +1214,7 @@ button.next-slide {
   width: 225px;
   margin-top: 23px;
   margin-bottom: 0;
-  margin-right: 150px;
+  margin-right: 155px;
   padding: 5px 5px 5px 0;
 }
 
@@ -1170,7 +1223,7 @@ button.next-slide {
   vertical-align: top;
   width: 130px;
   padding: 5px;
-  margin-top: 20px;
+  margin-top: 22px;
   margin-right: 110px;
   min-height: 40px;
 }
@@ -1565,6 +1618,7 @@ button.next-slide {
   top: -1px;
   background-image: url(../img/icons/spritesheet.png);
   background-position: -29px -31px;
+  cursor: pointer;
 }
 
 .filter-manufacturer input:checked + label::before {
@@ -1590,6 +1644,7 @@ button.next-slide {
   top: -2px;
   background-image: url(../img/icons/spritesheet.png);
   background-position: -99px -55px;
+  cursor: pointer;
 }
 
 .filter-power input:checked + label::before {
