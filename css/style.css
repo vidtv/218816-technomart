@@ -789,6 +789,7 @@ button.next-slide {
   width: 210px;
   min-height: 170px;
   padding: 2px;
+  position: relative;
 }
 
 .item-name {
@@ -1791,7 +1792,8 @@ button.next-slide {
 }
 
 .catalog-items-list {
-  margin-bottom: 52px;
+  padding-bottom: 10px;
+  margin-bottom: 42px;
 }
 
 .catalog-items-list article {
@@ -1815,6 +1817,70 @@ button.next-slide {
   height: 59px;
   background-image: url(../img/icons/spritesheet.png);
   background-position: -165px -5px;
+}
+
+.item-buttons {
+  display: none;
+  padding: 5px;
+  margin-top: 36px;
+  margin-left: 35px;
+  width: 135px;
+  min-height: 83px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item-buttons button {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "CuprumRegular";
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.item-buttons .to-buy-item {
+  position: relative;
+  min-height: 35px;
+  padding-left: 49px;
+  padding-right: 45px;
+  padding-top: 13px;
+  padding-bottom: 8px;
+  background-color: #63a63e;
+  color: white;
+  border: none;
+  box-shadow: 0 3px 0px 0px #367315;
+  margin-bottom: 10px;
+}
+
+.item-buttons .into-bookmarks {
+  width: 135px;
+  padding: 10px 0;
+  padding-bottom: 8px;
+  padding-left: 33px;
+  padding-right: 29px;
+  border: 3px solid #63a63e;
+  background-color: white;
+  color: #32425c;
+}
+
+.item-buttons .to-buy-item::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 13px;
+  width: 17px;
+  height: 16px;
+  background-image: url(../img/icons/spritesheet.png);
+  background-position: -132px -5px;
+}
+
+.item-picture:hover img {
+  display: none;
+}
+
+.item-picture:hover .item-buttons {
+  display: block;
 }
 
 .catalog-items-pages a {
