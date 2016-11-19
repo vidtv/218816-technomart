@@ -266,8 +266,10 @@ body {
 .shop-telephone {
   position: relative;
   width: 184px;
-  padding: 11px 10px;
+  padding-right: 10px;
   padding-left: 71px;
+  padding-top: 12px;
+  padding-bottom: 10px;
   min-height: 18px;
   border: 3px white solid;
   margin-left: 5px;
@@ -355,9 +357,10 @@ body {
   display: inline-block;
   vertical-align: top;
   width: 19px;
-  padding: 13px 14px 14px;
-  min-height: 18px;
-  background: url(../img/icons/icon-user.png) center no-repeat;
+  margin: 13px 14px 11px 12px;
+  height: 18px;
+  background-image: url(../img/icons/spritesheet.png);
+  background-position: -158px -121px;
 }
 
 .user-name {
@@ -365,10 +368,7 @@ body {
   vertical-align: top;
   width: 189px;
   min-height: 19px;
-  padding-top: 14px;
-  padding-bottom: 12px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding: 13px 2px;
 }
 
 .user-name a {
@@ -380,10 +380,14 @@ body {
 
 .user-logout {
   display: inline-block;
-  width: 60px;
+  vertical-align: top;
+  width: 21px;
   min-height: 17px;
-  padding: 14px 0;
-  background: url(../img/icons/icon-logout.png) center no-repeat;
+  margin: 14px 0;
+  margin-left: 28px;
+  margin-bottom: 11px;
+  background-image: url(../img/icons/spritesheet.png);
+  background-position: -97px -99px;
 }
 
 .user-block ul {
@@ -399,7 +403,7 @@ body {
 .user-block li:first-child {
   position: relative;
   margin-left: 7px;
-  padding-right: 36px;
+  padding-right: 34px;
 }
 
 .user-orders {
@@ -1297,11 +1301,16 @@ button.next-slide {
   width: 96px;
 }
 
+.email-popup,
+.map-popup {
+  padding: 0;
+}
+
 .email-popup {
+  box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.75);
   width: 620px;
   min-height: 423px;
   border-top: 7px solid #ee3643;
-  display: none;
 }
 
 .email-container {
@@ -1312,7 +1321,7 @@ button.next-slide {
 .email-form {
   min-height: 264px;
   padding: 10px;
-  margin-bottom: 37px;
+  margin-bottom: 24px;
 }
 
 .email-form p {
@@ -1331,7 +1340,7 @@ button.next-slide {
   width: 220px;
   min-height: 64px;
   margin-top: 38px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   display: inline-block;
 }
 
@@ -1362,10 +1371,10 @@ button.next-slide {
 }
 
 .email-message textarea {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 14px;
   padding-left: 14px;
-  padding-right: 6px;
+  padding-right: 12px;
 }
 
 .email-send {
@@ -1381,14 +1390,16 @@ button.next-slide {
   color: white;
   text-transform: uppercase;
   font-family: "CuprumRegular";
+  font-size: 14px;
+  line-height: 18px;
   border: none;
 }
 
 .map-popup {
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.5);
   width: 940px;
   min-height: 446px;
   background-image: url(../img/map-spb.jpg);
-  display: none;
 }
 
 .email-popup-close,
@@ -1428,11 +1439,19 @@ button.next-slide {
   vertical-align: top;
 }
 
+.breadcrumps li:first-child {
+  margin-left: 38px;
+}
+
+.breadcrumps li:last-child {
+  margin-left: 43px;
+}
+
 .breadcrumps li::before {
   position: absolute;
   content: "";
   top: 3px;
-  left: -24px;
+  left: -23px;
   width: 8px;
   height: 12px;
   background-image: url(../img/icons/spritesheet.png);
@@ -1448,10 +1467,12 @@ button.next-slide {
   text-transform: uppercase;
 }
 
-.home-page {
-  width: 14px;
-  min-height: 17px;
-  background: url(../img/icons/icon-home.png) center no-repeat;
+.breadcrumps .home-page {
+  width: 15px;
+  min-height: 12px;
+  background: url(../img/icons/spritesheet.png);
+  background-position: -134px -77px;
+  margin-top: 23px;
 }
 
 .breadcrumps ol,
@@ -1463,7 +1484,9 @@ button.next-slide {
 
 .catalog-category-name {
   min-height: 29px;
-  padding: 40px 30px;
+  padding: 30px;
+  padding-left: 28px;
+  padding-top:29px;
   background-color: #f2f6f8;
 }
 
@@ -1488,6 +1511,7 @@ button.next-slide {
 .filter-header {
   min-height: 18px;
   padding: 10px;
+  padding-left: 19px;
   background-color: #f7f3ec;
   border-radius: 2px;
 }
@@ -1513,7 +1537,7 @@ button.next-slide {
 
 .filter-price h4 {
   margin-top: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 
 .filter-input {
@@ -1552,16 +1576,15 @@ button.next-slide {
   background-color: #ababab;
   cursor: pointer;
   box-shadow: 0 2px 1px 0 #cfcfcf;
+  bottom: -9px;
 }
 
 .filter-input .filter-active::before {
   left: -20px;
-  bottom: -10px;
 }
 
 .filter-input .filter-active::after {
   right: -20px;
-  bottom: -10px;
 }
 
 .filter-range input,
@@ -1578,7 +1601,10 @@ button.next-slide {
   font-size: 17px;
   line-height: 18px;
   text-align: center;
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-right: 8px;
   margin-top: 9px;
 }
 
@@ -1589,6 +1615,7 @@ button.next-slide {
 
 .filter-manufacturer h4 {
   margin-top: 19px;
+  margin-bottom: 14px;
 }
 
 .filter-manufacturer input {
@@ -1603,6 +1630,7 @@ button.next-slide {
   position: relative;
   display: block;
   margin-left: 35px;
+  margin-bottom: 4px;
 }
 
 .filter-manufacturer label {
@@ -1624,6 +1652,10 @@ button.next-slide {
 .filter-manufacturer input:checked + label::before {
   width: 27px;
   background-position: -62px -55px;
+}
+
+.filter-power h4 {
+  margin: 11px 0;
 }
 
 .filter-power input {
@@ -1652,7 +1684,7 @@ button.next-slide {
 }
 
 .filters button {
-  margin-top: 50px;
+  margin-top: 77px;
   width: 140px;
   font-family: "PTSansRegular";
   text-transform: uppercase;
@@ -1794,7 +1826,7 @@ button.next-slide {
   font-family: "PTSansRegular";
   font-size: 13px;
   line-height: 18px;
-  margin-right: 10px;
+  margin-right: 6px;
   border: 1px #e5e5e5 solid;
   border-radius: 2px;
   color: black;
@@ -1818,12 +1850,12 @@ button.next-slide {
 .catalog-category-about .container {
   padding: 10px;
   width: 940px;
-  min-height: 251px;
+  min-height: 241px;
 }
 
 .catalog-category-about h2 {
   margin-top: 58px;
-  margin-bottom: 39px;
+  margin-bottom: 29px;
   font-size: 30px;
   line-height: 24px;
   font-family: "CuprumRegular";
@@ -1838,15 +1870,17 @@ button.next-slide {
 }
 
 .basket-add {
-  display: none;
+  box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.75);
   min-height: 275px;
   width: 620px;
   border-top: #ee3643 7px solid;
+  padding: 0;
 }
 
 .basket-message {
   min-height: 18px;
-  padding: 63px 0;
+  padding-top: 61px;
+  padding-bottom: 65px;
   text-align: center;
 }
 
@@ -1866,15 +1900,15 @@ button.next-slide {
 .basket-message h2::before {
   position: absolute;
   content: "";
-  width: 66px;
-  height: 66px;
+  width: 60px;
+  height: 60px;
   border: transparent solid;
-  border-radius: 33px;
+  border-radius: 30px;
   background-color: #63a63e;
-  bottom: -17px;
+  bottom: -14px;
   left: -90px;
   background-image: url(../img/icon-basket-added.png);
-  background-position: center;
+  background-position: 13px 16px;
   background-repeat: no-repeat;
 }
 
