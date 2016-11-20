@@ -98,34 +98,42 @@
             <a href="#">На 350 товаров</a>
           </div>
         </div>
-        <div class="slider-items slide-perforator">
-          <h2>Перфораторы</h2>
-          <p>Настоящие мужские игрушки</p>
-          <button class="prev-slide"></button>
-          <button class="next-slide"></button>
-          <div class="button">
-            <a href="#">Открыть каталог</a>
-          </div>
+
+        <div class="slider">
+        <!-- Переключатель слайдов -->
+          <input type="radio" id="perforators" name="slide" checked>
+          <input type="radio" id="drills" name="slide">
           <div class="slider-indicator">
-            <input type="radio" id="perforators" name="slide" checked>
             <label for="perforators"></label>
-            <input type="radio" id="drills" name="slide">
             <label for="drills"></label>
           </div>
-        </div>
-        <div class="slider-items slide-drill invisible">
-          <h2>Дрели</h2>
-          <p>Соседям на радость!</p>
-          <button class="prev-slide"></button>
-          <button class="next-slide"></button>
-          <div class="button">
-            <a href="#">Открыть каталог</a>
-          </div>
-          <div class="slider-indicator">
-            <input type="radio" id="perforators" name="slide">
-            <label for="perforators"></label>
-            <input type="radio" id="drills" name="slide" checked>
-            <label for="drills"></label>
+
+          <div class="slider-items">
+          <!-- слайд с ПЕРФОРАТОРАМИ -->
+            <div class="slide">
+              <div class="slide-perforator">
+                <h2>Перфораторы</h2>
+                <p>Настоящие мужские игрушки</p>
+                <button class="prev-slide"></button>
+                <button class="next-slide"></button>
+                <div class="button">
+                  <a href="#">Открыть каталог</a>
+                </div>
+              </div>
+            </div>
+
+              <!-- слайд с ДРЕЛЯМИ-->
+            <div class="slide">
+              <div class="slide-drill">
+                <h2>Дрели</h2>
+                <p>Соседям на радость!</p>
+                <button class="prev-slide"></button>
+                <button class="next-slide"></button>
+                <div class="button">
+                  <a href="#">Открыть каталог</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="shop-feature shop-delivery">
