@@ -620,7 +620,7 @@ body {
 }
 
 .slider-indicator {
-  width: 30px;
+  width: 33px;
   height: 10px;
   position: absolute;
   display: inline-block;
@@ -973,10 +973,6 @@ label.next-slide {
   font-family: "CuprumRegular";
 }
 
-
-
-
-
 .services-select {
   position: relative;
   min-height: 264px;
@@ -1043,17 +1039,17 @@ label.next-slide {
   margin: 0;
 }
 
-.service-description .delivery {
+.service-description:nth-child(1) {
   background: url(../img/services/delivery.png) right bottom no-repeat;
   background-position: 160px 26px;
 }
 
-.service-description .guarantee {
+.service-description:nth-child(2) {
   background: url(../img/services/guarantee.png) right bottom no-repeat;
   background-position: 247px 4px;
 }
 
-.service-description .credit {
+.service-description:nth-child(3) {
   background: url(../img/services/credit.png) right bottom no-repeat;
   background-position: 190px 2px;
 }
@@ -1069,11 +1065,6 @@ label.next-slide {
 #credit:checked ~ .service-slides .service-description:nth-child(3) {
   display: block;
 }
-
-
-
-
-
 
 .delivery p {
   width: 280px;
@@ -1234,10 +1225,15 @@ label.next-slide {
   padding-bottom: 7px;
 }
 
+.footer-mid.container {
+  width: 970px;
+}
+
 .footer-mid p {
   display: inline-block;
   padding: 3px;
   margin-top: 24px;
+  margin-left: 15px;
   color: white;
   font-size: 18px;
   line-height: 24px;
@@ -1249,7 +1245,7 @@ label.next-slide {
 }
 
 .footer-mid .shop-navigation {
-  width: 525px;
+  width: 535px;
   margin-top: 27px;
   margin-left: 88px;
 }
