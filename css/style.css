@@ -601,6 +601,96 @@ body {
   text-transform: uppercase;
 }
 
+.slider {
+  position: relative;
+  float: left;
+  margin-left: 0;
+  margin-top: 20px;
+  width: 620px;
+  min-height: 266px;
+}
+
+.slider input {
+  position:absolute;
+  opacity:0;
+}
+
+.slider-indicator {
+  width: 30px;
+  height: 10px;
+  position: absolute;
+  display: inline-block;
+  bottom: 33px;
+  left: 295px;
+  z-index: 1000;
+}
+
+.slider-indicator label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border: 3px solid white;
+  border-radius: 50%;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.slider-indicator label:first-child {
+  margin-right: 4px;
+}
+
+#perforators:checked ~ .slider-indicator label[for="perforators"],
+#drills:checked ~ .slider-indicator label[for="drills"] {
+  background-color: #ee3643;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slide h2 {
+  font-size: 36px;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  font-family: "CuprumBold";
+  text-transform: uppercase;
+  margin-left: 24px;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+
+.slide:nth-child(1) {
+  background-image: url(../img/slides/perforators.jpg);
+}
+
+.slide:nth-child(2) {
+  background-image: url(../img/slides/drills.jpg);
+}
+
+.slide {
+  display: none;
+}
+
+#perforators:checked ~ .slider-items .slide:nth-child(1) {
+  display: block;
+}
+
+#drills:checked ~ .slider-items .slide:nth-child(2) {
+  display: block;
+}
+
+/* СТАРАЯ ВЕРСТКА СЛАЙДЕРА
+
 .slider-items {
   position: relative;
   float: left;
@@ -610,19 +700,56 @@ body {
   min-height: 266px;
 }
 
-.slide-perforator {
+#perforators:checked ~ .slider-items .slide-perforator {
+  display: block;
   background-image: url(../img/slides/perforators.jpg);
 }
 
-.slide-drill {
+#drills:checked ~ .slider-items .slide-drill {
+  display: block;
   background-image: url(../img/slides/drills.jpg);
 }
+
+.slider-indicator {
+  position: absolute;
+  display: inline-block;
+  bottom: 33px;
+  left: 295px;
+  z-index: 1000;
+}
+
+.slider input {
+  position: absolute;
+  opacity: 0;
+}
+
+#perforators:checked ~ .slider-indicator label[for="perforators"],
+#drills:checked ~ .slider-indicator label[for="drills"] {
+  background-image: url(../img/slides/slider-indicator-checked.png);
+}
+
+.slider input + label::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/slides/slider-indicator.png);
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.slider input:checked + label::before {
+  background-image: url(../img/slides/slider-indicator-checked.png);
+} */
+
+
+
 
 .invisible {
   display: none;
 }
 
-.slider-items > button {
+.slider-items button {
   display: block;
   width: 22px;
   height: 40px;
@@ -643,20 +770,6 @@ button.next-slide {
   background: url(../img/icons/spritesheet.png) no-repeat;
   background-position: -68px -5px;
   margin-right: 20px;
-}
-
-.slider-items h2 {
-  font-size: 36px;
-  line-height: 30px;
-  color: white;
-  font-weight: bold;
-  font-family: "CuprumBold";
-  text-transform: uppercase;
-  margin-left: 24px;
-  margin-top: 25px;
-  padding-bottom: 5px;
-  padding-right: 15px;
-  margin-bottom: 0;
 }
 
 .slider-items p {
@@ -681,31 +794,6 @@ button.next-slide {
 .slider-items .button {
   width: 195px;
   margin-left: 25px;
-}
-
-.slider-indicator {
-  position: absolute;
-  display: inline-block;
-  bottom: 33px;
-  left: 295px;
-}
-
-.slider-indicator input {
-  display: none;
-}
-
-.slider-indicator input + label::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-image: url(../img/slides/slider-indicator.png);
-  margin-right: 6px;
-  cursor: pointer;
-}
-
-.slider-indicator input:checked + label::before {
-  background-image: url(../img/slides/slider-indicator-checked.png);
 }
 
 .button a {
