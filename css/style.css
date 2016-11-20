@@ -67,6 +67,10 @@ body {
   clear: both;
 }
 
+.invisible {
+  display: none;
+}
+
 .page-header {
   min-height: 320px;
   background-color: #f1f5f7;
@@ -689,27 +693,30 @@ body {
   display: block;
 }
 
-.invisible {
-  display: none;
+.slide-toggler {
+  width: 100%;
+  min-height: 40px;
+  position: absolute;
+  bottom: 114px;
+  z-index: 1000;
 }
 
-.slider-items button {
+.slide-toggler label {
   display: block;
   width: 22px;
   height: 40px;
-  margin-top: -92px;
   border: none;
   cursor: pointer;
 }
 
-button.prev-slide {
+label.prev-slide {
   float: left;
   background: url(../img/icons/spritesheet.png) no-repeat;
   background-position: -100px -5px;
   margin-left: 25px;
 }
 
-button.next-slide {
+label.next-slide {
   float: right;
   background: url(../img/icons/spritesheet.png) no-repeat;
   background-position: -68px -5px;
