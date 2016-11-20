@@ -973,11 +973,16 @@ label.next-slide {
   font-family: "CuprumRegular";
 }
 
+
+
+
+
 .services-select {
+  position: relative;
   min-height: 264px;
 }
 
-.services-slider {
+.services-toggler {
   position: relative;
   float: left;
   width: 240px;
@@ -985,7 +990,7 @@ label.next-slide {
   margin-right: 70px;
 }
 
-.services-slider::after {
+.services-toggler::after {
   position: absolute;
   content: "";
   background-image: url(../img/services/shadow.png);
@@ -996,7 +1001,8 @@ label.next-slide {
 }
 
 .services input {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .services label {
@@ -1012,13 +1018,11 @@ label.next-slide {
   cursor: pointer;
 }
 
-.services input:checked + label {
+#delivery:checked ~ .services-toggler label[for="delivery"],
+#guarantee:checked ~ .services-toggler label[for="guarantee"],
+#credit:checked ~ .services-toggler label[for="credit"] {
   background-color: white;
   color: #32425c;
-}
-
-.services label:first-child {
-  margin-bottom: 40px;
 }
 
 .service-description {
@@ -1027,6 +1031,7 @@ label.next-slide {
   min-height: 254px;
   padding: 10px;
   padding-top: 0;
+  display: none;
 }
 
 .service-description h2 {
@@ -1038,20 +1043,37 @@ label.next-slide {
   margin: 0;
 }
 
-.delivery {
+.service-description .delivery {
   background: url(../img/services/delivery.png) right bottom no-repeat;
   background-position: 160px 26px;
 }
 
-.guarantee {
+.service-description .guarantee {
   background: url(../img/services/guarantee.png) right bottom no-repeat;
   background-position: 247px 4px;
 }
 
-.credit {
+.service-description .credit {
   background: url(../img/services/credit.png) right bottom no-repeat;
   background-position: 190px 2px;
 }
+
+#delivery:checked ~ .service-slides .service-description:nth-child(1) {
+  display: block;
+}
+
+#guarantee:checked ~ .service-slides .service-description:nth-child(2) {
+  display: block;
+}
+
+#credit:checked ~ .service-slides .service-description:nth-child(3) {
+  display: block;
+}
+
+
+
+
+
 
 .delivery p {
   width: 280px;
