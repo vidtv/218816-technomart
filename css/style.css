@@ -234,6 +234,10 @@ body {
   text-align: center;
 }
 
+.make-order:hover {
+  background-color: #5fbb2d;
+}
+
 .shop-info {
   min-height: 158px;
 }
