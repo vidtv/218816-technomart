@@ -1985,11 +1985,11 @@ label.next-slide {
   background-position: -132px -5px;
 }
 
-.item-picture:hover img {
+.catalog-article:hover img {
   display: none;
 }
 
-.item-picture:hover .item-buttons {
+.catalog-article:hover .item-buttons {
   display: block;
 }
 
