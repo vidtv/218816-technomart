@@ -103,6 +103,10 @@ body {
   background-color: #ca2c37;
 }
 
+.logo:active {
+  background-color: #ba2732;
+}
+
 .logo::after {
   position: absolute;
   content: "";
@@ -119,6 +123,10 @@ body {
 
 .logo:hover:after {
   background-color: #9a212a;
+}
+
+.logo:active::after {
+  background-color: #8e1e26;
 }
 
 .logo a {
@@ -141,6 +149,21 @@ body {
   background-color: #212a3a;
 }
 
+.bookmarks:active,
+.basket:active {
+  background-color: #161d29;
+}
+
+.make-order:active {
+  background-color: #518534;
+}
+
+.bookmarks:active a,
+.basket:active a,
+.make-order:active a {
+  color: #8b8e94;
+}
+
 .search input {
   background-color: inherit;
   color: white;
@@ -161,6 +184,30 @@ body {
   background-position: -206px -94px;
   width: 17px;
   height: 17px;
+}
+
+.search:hover::before {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -96px -86px;
+}
+
+.search input:focus {
+  color: #333333;
+}
+
+.search input:focus::before {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -143px -59px;
+}
+
+.bookmarks:hover::before {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -83px -5px;
+}
+
+.basket:hover::before {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -32px -5px;
 }
 
 .order-block {
@@ -332,6 +379,17 @@ body {
   text-align: left;
 }
 
+.user-login:hover a,
+.user-reg:hover a {
+  color: #ee3643;
+}
+
+.user-login:active a,
+.user-reg:active a,
+.user-name a {
+  color: #b2b2b2;
+}
+
 .user-login::before {
   position: absolute;
   content: "";
@@ -341,6 +399,11 @@ body {
   height: 17px;
   left: 14px;
   top: 14px;
+}
+
+.user-login:hover::before {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -140px -5px;
 }
 
 .user-login a,
@@ -369,6 +432,11 @@ body {
   height: 18px;
   background-image: url(../img/icons/spritesheet.png);
   background-position: -158px -121px;
+}
+
+.user-profile:hover .user-account {
+  background-image: url(../img/icons/icon-user-hover.png);
+  background-position: 0px 0px;
 }
 
 .user-name {
@@ -406,6 +474,14 @@ body {
 .user-block li {
   list-style-type: none;
   display: inline-block;
+}
+
+.user-block a:hover {
+  color: #ee3643;
+}
+
+.user-block a:active {
+  color: #b7bfc8;
 }
 
 .user-block li:first-child {
@@ -459,6 +535,18 @@ body {
 
 .header-navigation li {
   padding: 19px 30px;
+}
+
+.header-navigation li:hover {
+  background-color: #293449;
+}
+
+.header-navigation li:active {
+  background-color: #1d2739;
+}
+
+.header-navigation a:active {
+  color: #8e939c;
 }
 
 .header-navigation li:first-child {
@@ -600,6 +688,16 @@ body {
   margin-top: 13px;
   border-radius: 2px;
   background-image: url(../img/opacity.png);
+}
+
+.shop-feature-link:hover {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -170px -5px;
+}
+
+.shop-feature-link:active {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -5px -114px;
 }
 
 .shop-feature-link a {
@@ -749,6 +847,14 @@ label.next-slide {
 .slider-items .button {
   width: 195px;
   margin-left: 25px;
+}
+
+.slider-items .button:hover {
+  background-color: #ca2c37;
+}
+
+.slider-items .button:active {
+  background-color: #ba2732;
 }
 
 .button a {
