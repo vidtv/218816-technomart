@@ -320,7 +320,7 @@
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами,
           заехав в наш офис:</p>
-          <a href="https://goo.gl/9gZVUE" target="_blank">
+          <a class="open-map-popup" href="#" target="_blank">
             <img src="img/map-small.jpg" width="300" height="160" alt="Наш офис">
           </a>
           <div class="button button-contacts">
@@ -400,30 +400,46 @@
         </div>
       </div>
     </footer>
-    <div class="map-popup container invisible"> <!-- всплывающее окно с большой картой-->
+    <div class="map-popup container"> <!-- всплывающее окно с большой картой-->
       <div class="map-popup-close"></div>
     </div>
-    <div class="email-popup container invisible"> <!-- всплывающее окно с формой отправки сообщения-->
-      <div class="email-popup-close"></div> <!-- кнопка закрытия окна-->
-      <div class="email-container"> <!-- центровщик контента всплывающего окна -->
-        <div class="email-form">
-          <div class="email-name">
-            <p>Ваше имя:</p>
-            <textarea cols="29" rows="1" placeholder="Представьтесь, пожалуйста" required></textarea>
-          </div
-          ><div class="email-address">
-            <p>Ваш e-mail:</p>
-            <textarea cols="29" rows="1" placeholder="Для отправки ответа" required></textarea>
-          </div>
-          <div class="email-message">
-            <p>Текст письма:</p>
-            <textarea cols="65" rows="5" name="message" placeholder="В свободной форме"></textarea>
+    <div class="email-popup container"> <!-- всплывающее окно с формой отправки сообщения-->
+      <form action="#" method="post">
+        <div class="email-popup-close"></div> <!-- кнопка закрытия окна-->
+        <div class="email-container"> <!-- центровщик контента всплывающего окна -->
+          <div class="email-form">
+            <div class="email-name">
+              <p>Ваше имя:</p>
+              <textarea cols="29" rows="1" placeholder="Представьтесь, пожалуйста" required></textarea>
+            </div
+            ><div class="email-address">
+              <p>Ваш e-mail:</p>
+              <textarea cols="29" rows="1" placeholder="Для отправки ответа" required></textarea>
+            </div>
+            <div class="email-message">
+              <p>Текст письма:</p>
+              <textarea cols="65" rows="5" name="message" placeholder="В свободной форме" required></textarea>
+            </div>
           </div>
         </div>
+        <div class="email-send">
+          <button class="button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="basket-add container"> <!-- всплывающий попап о добавлении товара в корзину-->
+      <div class="basket-popup-close"></div>
+      <div class="basket-message">
+        <h2>Товар добавлен в корзину!</h2>
       </div>
-      <div class="email-send">
-        <button class="button" type="submit">Отправить</button>
+      <div class="basket-options">
+        <div class="button button-make-order">
+          <a href="#">Оформить заказ</a>
+        </div
+        ><button type="button" class="button button-continue-buy">Продолжить покупки</button>
       </div>
     </div>
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
   </body>
 </html>
