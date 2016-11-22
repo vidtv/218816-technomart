@@ -67,6 +67,10 @@ body {
   clear: both;
 }
 
+button:active {
+  outline-color: transparent;
+}
+
 .invisible {
   display: none;
 }
@@ -138,9 +142,8 @@ body {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 221px;
+  width: 270px;
   min-height: 42px;
-  padding-left: 48px;
 }
 
 .search:hover,
@@ -165,19 +168,37 @@ body {
 }
 
 .search input {
-  background-color: inherit;
+  background-color: #293449;
   color: white;
   font-family: "CuprumRegular";
   font-size: 17px;
   line-height: 18px;
-  margin: 11px 0;
-  width: 220px;
+  width: 222px;
   border: none;
+  padding: 11px 0 14px 48px;
 }
 
-.search::before {
+.search input:hover {
+  background-color: #212a3a;
+}
+
+.search input:focus {
+  background-color: white;
+  outline-color: transparent;
+}
+
+.search:hover input + div {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -96px -86px;
+}
+
+.search input:focus + div {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -143px -59px;
+}
+
+.icon-search {
   position: absolute;
-  content: "";
   top: 12px;
   left: 17px;
   background-image: url(../img/icons/spritesheet.png);
@@ -186,18 +207,8 @@ body {
   height: 17px;
 }
 
-.search:hover::before {
-  background-image: url(../img/spritesheet-styleguide.png);
-  background-position: -96px -86px;
-}
-
 .search input:focus {
   color: #333333;
-}
-
-.search input:focus::before {
-  background-image: url(../img/spritesheet-styleguide.png);
-  background-position: -143px -59px;
 }
 
 .bookmarks:hover::before {
@@ -1030,6 +1041,18 @@ label.next-slide {
   text-align: center;
 }
 
+.popular-manufacturers article:hover {
+  box-shadow: 0 10px 25px 7px rgba(41, 52, 73, 0.5);
+}
+
+.popular-manufacturers article:active {
+  box-shadow: 0 4px 10px 4px rgba(41, 52, 73, 0.5);
+}
+
+.manufacturer-article:active a > img {
+  opacity: 0.3;
+}
+
 .popular-manufacturers article:nth-child(4),
 .popular-manufacturers article:last-child {
   margin-right: 0;
@@ -1122,6 +1145,10 @@ label.next-slide {
   background-color: #32425c;
   color: white;
   cursor: pointer;
+}
+
+.services-toggler label:hover {
+  background-color: #293449;
 }
 
 #delivery:checked ~ .services-toggler label[for="delivery"],
@@ -1360,6 +1387,17 @@ label.next-slide {
   margin-left: 88px;
 }
 
+.footer-top-navigation a:hover,
+.items-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-top-navigation a:active,
+.items-navigation a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
 .items-navigation a {
   color: #ffd180;
 }
@@ -1383,10 +1421,10 @@ label.next-slide {
 }
 
 .shop-copyright {
-  width: 225px;
+  width: 230px;
   margin-top: 23px;
   margin-bottom: 0;
-  margin-right: 155px;
+  margin-right: 150px;
   padding: 5px 5px 5px 0;
 }
 
@@ -1409,6 +1447,11 @@ label.next-slide {
   margin-right: 5px;
   background-color: #212a3a;
   text-align: center;
+}
+
+.social-btn:hover,
+.social-btn:active {
+  background-color: #ee3643;
 }
 
 .social-btn:last-child {
@@ -1458,6 +1501,15 @@ label.next-slide {
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
+}
+
+.shop-feedback a:hover {
+  text-decoration: underline;
+}
+
+.shop-feedback a:active {
+  text-decoration: none;
+  color: #ee3643;
 }
 
 .shop-email {
@@ -1556,6 +1608,8 @@ label.next-slide {
 
 .email-name textarea,
 .email-address textarea {
+  width: 198px;
+  max-height: 18px;
   padding-left: 14px;
   padding-right: 4px;
   padding-top: 7px;
@@ -1572,10 +1626,12 @@ label.next-slide {
 }
 
 .email-message textarea {
+  width: 428px;
   padding-top: 8px;
   padding-bottom: 14px;
   padding-left: 14px;
   padding-right: 12px;
+  max-height: 110px;
 }
 
 .email-send {
@@ -1868,9 +1924,19 @@ label.next-slide {
   cursor: pointer;
 }
 
+.filter-manufacturer input:hover + label::before {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -107px -5px;
+}
+
 .filter-manufacturer input:checked + label::before {
   width: 27px;
   background-position: -62px -55px;
+}
+
+.filter-manufacturer input:checked + label:hover::before {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -5px -38px;
 }
 
 .filter-power h4 {
@@ -2080,6 +2146,16 @@ label.next-slide {
   color: #32425c;
 }
 
+.into-bookmarks:hover {
+  border-color: #32425c;
+  color: #32425c;
+}
+
+.into-bookmarks:active {
+  border-color: #c1c6ce;
+  color: #c1c6ce;
+}
+
 .item-buttons .to-buy-item::before {
   position: absolute;
   content: "";
@@ -2091,12 +2167,30 @@ label.next-slide {
   background-position: -132px -5px;
 }
 
+.catalog-article:hover {
+  box-shadow: 0 0 15px 3px rgba(41, 52, 73, 0.5);
+}
+
 .catalog-article:hover img {
   display: none;
 }
 
 .catalog-article:hover .item-buttons {
   display: block;
+}
+
+.to-buy-item:hover {
+  background-color: #5fbb2d;
+}
+
+.to-buy-item:active {
+  background-color: #518534;
+}
+
+.to-buy-item:hover::before,
+.to-buy-item:active::after {
+  background-image: url(../img/spritesheet-styleguide.png);
+  background-position: -32px -5px;
 }
 
 .catalog-items-pages a {
@@ -2112,6 +2206,14 @@ label.next-slide {
   border: 1px #e5e5e5 solid;
   border-radius: 2px;
   color: black;
+}
+
+.catalog-items-pages a:hover {
+  border-color: #bdc6ca;
+}
+
+.catalog-items-pages a:active {
+  border-color: #ee3643;
 }
 
 .catalog-items-pages .page-current {
