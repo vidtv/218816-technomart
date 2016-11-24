@@ -577,8 +577,7 @@ button:active {
   margin-top: 50px;
 }
 
-.index-main > section,
-.index-main > div {
+.index-main > section {
   padding: 10px;
 }
 
@@ -1063,6 +1062,7 @@ label.next-slide {
 }
 
 .services {
+  padding: 10px 0;
   background-color: #f2f6f8;
   min-height: 502px;
   margin-bottom: 40px;
@@ -1176,7 +1176,7 @@ label.next-slide {
 
 .service-description:nth-child(3) {
   background: url(../img/services/credit.png) right bottom no-repeat;
-  background-position: 180px 2px;
+  background-position: 150px 2px;
 }
 
 #delivery:checked ~ .service-slides .service-description:nth-child(1) {
@@ -1391,7 +1391,7 @@ label.next-slide {
 .footer-contacts {
   background-color: #293449;
   min-height: 87px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .footer-contacts p {
