@@ -738,7 +738,7 @@ button:active {
   display: inline-block;
   bottom: 33px;
   left: 295px;
-  z-index: 1000;
+  z-index: 998;
 }
 
 .slider-indicator label {
